@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B17E42C2-C57F-41A0-8D99-6CCF1E273467}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C367448C-75B2-4371-8BE3-C4E6E6F0CEEA}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RoosTest", "src\RoosTest\RoosTest.xproj", "{E25056CB-0919-4A0F-97F1-E41F81761919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E25056CB-0919-4A0F-97F1-E41F81761919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25056CB-0919-4A0F-97F1-E41F81761919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25056CB-0919-4A0F-97F1-E41F81761919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25056CB-0919-4A0F-97F1-E41F81761919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E25056CB-0919-4A0F-97F1-E41F81761919} = {B17E42C2-C57F-41A0-8D99-6CCF1E273467}
+	EndGlobalSection
+EndGlobal
