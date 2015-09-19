@@ -1,8 +1,7 @@
-﻿{
+{
   "webroot": "wwwroot",
   "userSecretsId": "aspnet5-RoosTest-7490c936-25ac-46d5-abd3-d094ad445e30",
   "version": "1.0.0-*",
-
   "dependencies": {
     "EntityFramework.Commands": "7.0.0-beta7",
     "EntityFramework.SqlServer": "7.0.0-beta7",
@@ -18,6 +17,7 @@
     "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta7",
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta7",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta7",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta7",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta7",
     "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta7",
     "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta7",
@@ -25,19 +25,17 @@
     "Microsoft.Framework.Configuration.UserSecrets": "1.0.0-beta7",
     "Microsoft.Framework.Logging": "1.0.0-beta7",
     "Microsoft.Framework.Logging.Console": "1.0.0-beta7",
-    "Microsoft.Framework.Logging.Debug" : "1.0.0-beta7",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta7"
+    "Microsoft.Framework.Logging.Debug": "1.0.0-beta7",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta7",
   },
-
   "commands": {
     "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+    "kestrel": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --config hosting.ini",
     "ef": "EntityFramework.Commands"
   },
-
   "frameworks": {
-    "dnxcore50": { }
+	"dnxcore50": { }
   },
-
   "exclude": [
     "wwwroot",
     "node_modules",
@@ -51,6 +49,11 @@
     "**.vspscc"
   ],
   "scripts": {
-    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
+    "prepublish": [
+      "npm install",
+      "bower install",
+      "gulp clean",
+      "gulp min"
+    ]
   }
 }
